@@ -13,11 +13,11 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
-    protected $table = 'User';
+    protected $table = 'user';
 
     protected $fillable = [
-        'Nickname',
-        'ID'
+        'nickname',
+        'id'
     ];
 
     protected $hidden = [

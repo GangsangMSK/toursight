@@ -13,18 +13,18 @@ use Illuminate\Database\Eloquent\Model;
 class Blog_Review extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
-    protected $table = 'Blog_Review';
+    protected $table = 'blog_Review';
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
     protected $fillable = [
-        "Title",
-        "Content",
-        "Score",
-        "User_no",
-        "Blog_no"
+        "title",
+        "content",
+        "score",
+        "user_no",
+        "blog_no"
     ];
 
 

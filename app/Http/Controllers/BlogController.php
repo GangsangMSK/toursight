@@ -41,4 +41,15 @@ class BlogController extends BaseController
     //     $user->delete();
     //     return redirect('/register');
     // }
+
+    public function getBlogsByLocal(Request $request)
+    {
+        // 화면에서 전달된 지역 정보
+        $selectedLocal = $request->input('local');
+
+        // 데이터베이스에서 해당 지역에 대한 블로그 데이터를 가져옴
+        $blogs = Blog::where('local', $selectedLocal)->get();
+
+        return view('blogs.index', compact('blogs'));
+    }
 }

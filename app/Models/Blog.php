@@ -10,25 +10,25 @@ use Laravel\Sanctum\HasApiTokens;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Blog extends Authenticatable
+class Blog extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
-    protected $table = 'Blog';
+    protected $table = 'blog';
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
     protected $fillable = [
-        "Title",
-        "User_no",
-        "Date",
-        "View_count",
-        "Content",
-        "Thumbnail",
-        "Address",
-        "Local",
-        "Total_score"
+        "title",
+        "user_no",
+        "date",
+        "view_count",
+        "content",
+        "thumbnail",
+        "address",
+        "local",
+        "total_score"
     ];
 
 

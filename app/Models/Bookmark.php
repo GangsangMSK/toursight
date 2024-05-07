@@ -13,16 +13,16 @@ use Illuminate\Database\Eloquent\Model;
 class Bookmark extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
-    protected $table = 'Bookmark';
+    protected $table = 'bookmark';
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
     protected $fillable = [
-        'Title',
-        'User_no',
-        'Blog_no'
+        'title',
+        'user_no',
+        'blog_no'
     ];
 
 

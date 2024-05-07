@@ -13,15 +13,15 @@ use Illuminate\Database\Eloquent\Model;
 class Blog_Image extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
-    protected $table = 'Blog_Image';
+    protected $table = 'blog_Image';
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
     protected $fillable = [
-        "Name",
-        "Blog_no"
+        "name",
+        "blog_no"
     ];
 
 
